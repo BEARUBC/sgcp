@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package sgcp.emg;
+
+enum Tasks {
+    UNDEFINED_TASK = 0;
+    // @todo krarpit implement EMG resource management and relevant task definitions
+}
+
+message TaskData {}

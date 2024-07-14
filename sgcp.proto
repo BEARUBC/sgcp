@@ -1,21 +1,30 @@
 syntax = "proto3";
 
+import "bms.proto";
+import "emg.proto";
+import "maestro.proto";
+
 package sgcp;
 
 enum Component {
-    UNKNOWN_COMPONENT = 0;
-    BMS               = 1;
-    EMG               = 2;
-    SERVO             = 3;
-    TELEMETRY         = 4;
+    UNDEFINED_COMPONENT = 0;
+    BMS                 = 1;
+    EMG                 = 2;
+    MAESTRO             = 3;
+    TELEMETRY           = 4;
 }
 
-message CommandRequest {
+message Request {
     Component component = 1;
     int32     taskCode  = 2;
+    oneof     taskData {
+        sgcp.bms.TaskData bmsData         = 3;
+        sgcp.emg.TaskData emgData         = 4;
+        sgcp.maestro.TaskData maestroData = 5;
+    }
 }
 
-message CommandResponse {
+message Response {
     int32  statusCode = 1;
     string message    = 2;
 }

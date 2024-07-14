@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package sgcp.maestro;
+
+enum Tasks {
+    UNDEFINED_TASK  = 0;
+    SET_GRIP        = 1;
+    SET_TARGET      = 2;
+}
+
+enum Grips {
+    UNDEFINED_GRIP = 0;
+    OPEN           = 1;
+    FIST           = 2;
+}
+
+message TaskData {
+    repeated int32 targets  = 1;
+    repeated int32 channels = 2;
+}

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package sgcp.telemetry;
-
-enum Tasks {
-    UNDEFINED_TASK             = 0; 
-    CHECK_CPU_USAGE_AND_MEMORY = 1;
-}
