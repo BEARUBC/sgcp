@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package sgcp.bms;
 
-enum Tasks {
+enum Task {
     UNDEFINED_TASK     = 0;
     GET_HEALTH_METRICS = 1;
 }

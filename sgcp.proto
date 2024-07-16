@@ -16,7 +16,7 @@ enum Component {
 
 message Request {
     Component component = 1;
-    int32     taskCode  = 2;
+    string    taskCode  = 2;
     oneof     taskData {
         sgcp.bms.TaskData bmsData         = 3;
         sgcp.emg.TaskData emgData         = 4;

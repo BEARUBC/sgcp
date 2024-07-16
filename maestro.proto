@@ -2,13 +2,13 @@ syntax = "proto3";
 
 package sgcp.maestro;
 
-enum Tasks {
+enum Task {
     UNDEFINED_TASK  = 0;
     SET_GRIP        = 1;
     SET_TARGET      = 2;
 }
 
-enum Grips {
+enum Grip {
     UNDEFINED_GRIP = 0;
     OPEN           = 1;
     FIST           = 2;
