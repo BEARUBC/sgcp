@@ -4,8 +4,8 @@ package sgcp.maestro;
 
 enum Task {
     UNDEFINED_TASK  = 0;
-    SET_GRIP        = 1;
-    SET_TARGET      = 2;
+    OPEN_FIST       = 1;
+    CLOSE_FIST      = 2;
 }
 
 enum Grip {
