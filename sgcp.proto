@@ -6,7 +6,7 @@ import "maestro.proto";
 
 package sgcp;
 
-enum Component {
+enum Resource {
     UNDEFINED_COMPONENT = 0;
     BMS                 = 1;
     EMG                 = 2;
@@ -15,7 +15,7 @@ enum Component {
 }
 
 message Request {
-    Component component = 1;
+    Resource resource = 1;
     string    taskCode  = 2;
     oneof     taskData {
         sgcp.bms.TaskData bmsData         = 3;
