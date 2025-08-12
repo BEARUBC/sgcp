@@ -3,6 +3,7 @@ syntax = "proto3";
 import "bms.proto";
 import "emg.proto";
 import "maestro.proto";
+import "fsr.proto";
 
 package sgcp;
 
@@ -11,6 +12,7 @@ enum Resource {
     BMS                 = 1;
     EMG                 = 2;
     MAESTRO             = 3;
+    FSR                 = 4;
 }
 
 message Request {
@@ -20,6 +22,7 @@ message Request {
         sgcp.bms.TaskData bmsData         = 3;
         sgcp.emg.TaskData emgData         = 4;
         sgcp.maestro.TaskData maestroData = 5;
+        sgcp.fsr.TaskData fsrData         = 6;
     }
 }
 
