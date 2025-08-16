@@ -6,6 +6,8 @@ enum Task {
     UNDEFINED_TASK  = 0;
     OPEN_FIST       = 1;
     CLOSE_FIST      = 2;
+    VIBRATE_ON      = 3;
+    VIBRATE_OFF     = 4;
 }
 
 enum Grip {

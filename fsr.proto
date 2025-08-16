@@ -4,9 +4,8 @@ package sgcp.fsr;
 
 enum Task {
     UNDEFINED_TASK = 0;
-    VIBRATE_ON = 1;
-    VIBRATE_OFF = 2;
-    ABORT = 3;
+    IDLE = 1;
+    ABORT = 2;
 }
 
 message TaskData {}
