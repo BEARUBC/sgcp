@@ -4,8 +4,9 @@ package sgcp.emg;
 
 enum Task {
     UNDEFINED_TASK = 0;
-    IDLE = 1;
-    ABORT = 2;
+    CALIBRATE = 1;
+    IDLE = 2;
+    ABORT = 3;
 }
 
 message TaskData {}
